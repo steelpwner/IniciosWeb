@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejemplo</title>
+</head>
+<body>
+    <center><h1 id="header">Javascript</h1></center>
+    <center> <img src="https://s3-us-west-2.amazonaws.com/devcodepro/media/tutorials/funciones-en-javascript-t1.png" height="200" width="400"></center>
+    <br>
+   <center> <form name="obtenerNumeros" action="" onsubmit="return sumarNumeros()" method="GET" >
+
+    Primer numero:<br>
+
+    <input type="text" name="n1"><br>
+
+    Segundo numero:<br>
+
+    <input type="text" name="n2"><br>
+
+    <input type="submit" value="Submit">
+
+   	</form></center>
+
+    <script>
+    	function validarForm() {
+        var valor1 = document.forms["obtenerNumeros"]["n1"].value;
+        var valor2 =document.forms["obtenerNumeros"]["n2"].value;
+      
+    	}
+
+    	function sumarNumeros() {
+    	var numero1=document.forms["obtenerNumeros"]["n1"].value;
+    	var numero2 =document.forms["obtenerNumeros"]["n2"].value;
+
+    	if (numero1=="" || numero2=="") {
+        alert("Los dos valores deben ser llenados");
+        } 
+        else {
+    	var suma=parseInt(numero1,10)+parseInt(numero2,10);
+    	alert("La suma fue: "+suma);
+        }
+
+    	}
+
+    </script>
+
+    <noscript>Tu navegador no admite JavaScript, o JavaScript está deshabilitado.</noscript>
+
+   <center> <details>
+
+    <summary>Copyright 2018-2020</summary>
+
+    <p> Por Diego Molina. Todos los derechos reservados</p>
+
+    <p> Todo el contenido de esta pagina es propiedad de Diego Molina</p>
+
+    </details>
+    <br>
+    <br>
+    <br>
+    <p><b>Nota:</b> No es soportado en IE(Internet explorer)</p></center>
+</body>
+
+</html>

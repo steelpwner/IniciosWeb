@@ -1,0 +1,7 @@
+{
+  users: [
+    "Diego,123",
+    "admin,admin",
+    "root,localhost"
+  ]
+}

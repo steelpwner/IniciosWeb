@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+    $("button").click(function(){
+        $.getJSON("users.json", function(result){
+            $.each(result, function(i, field){
+                $("div").append(field + " ");
+           	 	});
+        	});
+    	});
+	});
+	
+	</script>
+	<style type="text/css">
+		body {
+			background-color: lightblue;
+		}
+	</style>
+	</head>
+	<body>
+	
+	<button> Obtener datos </button>
+	</body>
+</html>
